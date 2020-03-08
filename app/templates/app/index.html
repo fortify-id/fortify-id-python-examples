@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+    {% block title %}Main Page{% endblock %}
+
+    {% block content %}
+      <h1 class="mt-5">Welcome to fortify-id.com demo site</h1>
+      <p class="lead">Click on <code>'About'</code> link at the top navigation bar to display currently logged in user information</p>
+      <p class="lead">When prompted for username/password, enter <code>demouser</code> as a username, and <code>passw0rd</code> as a password.</p>
+      <p class="lead">To end authenticated session, click on <code>'Logout'</code> link at the top navigation bar</p>
+      <p class="lead">{% lorem %}</p>
+    {% endblock %}

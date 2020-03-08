@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+
+{% block head %}
+   <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0;URL={% url 'openid_with_op_name' op_name='fortify-id' %}">
+{% endblock %}

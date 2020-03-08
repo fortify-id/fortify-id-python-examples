@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+    {% block title %}About{% endblock %}
+
+    {% block content %}
+      <h1 class="mt-5">Hello, {{ user.get_full_name }}</h1>
+      <p class="lead">You've been successfully authenticated</p>
+      <hr/>
+      <p class="lead">Last login: {{ user.last_login|date:"r" }}</p>
+      <p class="lead">Joined on: {{ user.date_joined|date:"r" }}</p>
+      <table>
+         {% for key, value in userinfo.items %}
+           <tr>
+             <td>{{key}}</td>
+             <td>{{value}}</td>
+           </tr>
+         {% endfor %}
+      </table>
+    {% endblock %}
+
