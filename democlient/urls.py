@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
+from django.conf import settings
 from django.views.generic import RedirectView
 from . import views
 
@@ -23,6 +24,10 @@ urlpatterns = [
     re_path(r'openid/callback/login/?$', views.authz_cb, name='openid_login_cb'),
     path(r'openid/', include('djangooidc.urls')),
     path('app/', include('app.urls')),
-    path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='/app'))
 ]
+
+if getattr(settings,'ADMIN_ENABLED'):
+    urlpatterns += [
+        path('admin/', admin.site.urls),
+    ]

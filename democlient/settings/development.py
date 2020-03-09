@@ -1,5 +1,7 @@
 from .common import *
 
+ADMIN_ENABLED = True
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'kgg1ds^ellb78u7=qrvi*&pv#vx6%ie_grj7hywxy*+f$i5to2'
 
