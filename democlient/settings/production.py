@@ -4,7 +4,7 @@ from .common import *
 SECRET_KEY = 'kgg1ds^ellb78u7=qrvi*&pv#vx6%ie_grj7hywxy*+f$i5to2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1']
 
