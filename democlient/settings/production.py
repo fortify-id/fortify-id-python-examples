@@ -8,11 +8,11 @@ SECRET_KEY = 'kgg1ds^ellb78u7=qrvi*&pv#vx6%ie_grj7hywxy*+f$i5to2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 OIDC_PROVIDERS = {
     "fortify-id": {
-        "srv_discovery_url": "https://login.staging.fortify-id.com/auth/realms/demo",
+        "srv_discovery_url": "https://login.fortify-id.com/auth/realms/demo",
         "behaviour": OIDC_DEFAULT_BEHAVIOUR,
         "client_registration": {
             "client_id": "demo-python-client",
