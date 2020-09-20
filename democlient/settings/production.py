@@ -16,7 +16,7 @@ OIDC_PROVIDERS = {
         "behaviour": OIDC_DEFAULT_BEHAVIOUR,
         "client_registration": {
             "client_id": "demo-python-client",
-            "client_secret": "612c5f0e-588b-4bcf-9b9c-86cb94852d84",
+            "client_secret": "1c8dfa49-16a5-457d-8bc0-5e3102db80f4",
             "redirect_uris": ["https://fortifyid-demo-app.herokuapp.com/openid/callback/login/"],
             "post_logout_redirect_uris": ["https://fortifyid-demo-app.herokuapp.com//openid/callback/logout/"],
             "token_endpoint_auth_method": "client_secret_post",
