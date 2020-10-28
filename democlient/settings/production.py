@@ -12,7 +12,7 @@ ALLOWED_HOSTS = ['.herokuapp.com']
 
 OIDC_PROVIDERS = {
     "fortify-id": {
-        "srv_discovery_url": "https://login.fortify-id.com/auth/realms/demo",
+        "srv_discovery_url": "https://login.fortify-id.com/oauth2/realms/demo",
         "behaviour": OIDC_DEFAULT_BEHAVIOUR,
         "client_registration": {
             "client_id": "demo-python-client",
