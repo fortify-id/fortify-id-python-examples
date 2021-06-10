@@ -4,7 +4,7 @@ certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
 cryptography==2.8
-Django==2.2.10
+Django==2.2.24
 git+git://github.com/brat000012001/django-oidc#egg=django-oidc
 future==0.18.2
 gunicorn==20.0.4
